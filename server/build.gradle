@@ -1,0 +1,16 @@
+dependencies {
+    implementation project(':common')
+    implementation project(path: ':common')
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation project(':common')
+    implementation 'org.postgresql:postgresql:42.7.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+task prepareKotlinBuildScriptModel {
+
+}
